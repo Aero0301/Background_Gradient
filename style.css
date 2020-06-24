@@ -1,0 +1,18 @@
+body {
+    background: linear-gradient(to right, black, white);
+}
+
+h1 {
+    text-align: center;
+}
+
+#direction {
+    justify-content: space-evenly;
+    display: flex;
+    text-align: center;
+}
+
+#colorInput {
+    justify-content: space-evenly;
+    display: flex;
+}
