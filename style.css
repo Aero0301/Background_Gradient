@@ -1,18 +1,24 @@
-body {
-    background: linear-gradient(to right, black, white);
-}
-
-h1 {
-    text-align: center;
+#app {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom right, black, white);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #direction {
-    justify-content: space-evenly;
-    display: flex;
-    text-align: center;
+  display: flex;
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 #colorInput {
-    justify-content: space-evenly;
-    display: flex;
+  display: flex;
+  align-self: stretch;
+  justify-content: space-evenly;
 }
