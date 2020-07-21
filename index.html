@@ -5,17 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gradient Generator</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="script.js" defer></script>
   </head>
-  <body id="app">
-    <h1>Background Gradient</h1>
-    <div id="direction">
-      <h4>Left</h4>
-      <h4>Right</h4>
-    </div>
-    <div id="colorInput">
+  <body>
+    <div id="app" :style="styleObject">
+      <h1>Background Gradient</h1>
+      <div id="direction">
+        <h4>Left</h4>
+        <h4>Right</h4>
+      </div>
+      <!-- <div id="colorInput">
       <input type="color" name="leftColor" id="color1" />
       <input type="color" name="rightColor" id="color2" />
+    </div> -->
+      <div id="colorInput">
+        <input type="color" name="leftColor" id="color1" v-model="leftColor" />
+        <input
+          type="color"
+          name="rightColor"
+          id="color2"
+          v-model="rightColor"
+        />
+      </div>
     </div>
   </body>
 </html>
